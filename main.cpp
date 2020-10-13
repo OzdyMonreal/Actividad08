@@ -6,6 +6,7 @@ using namespace std;
 int main() {
   Computadora comp1;
   Computadora comp2;
+  Computadora comp3;
   // Computadora comp3;
 
   comp1.setSisOp("Windows");
@@ -18,11 +19,15 @@ int main() {
   comp2.setProcesador("AMD Ryzen 7 4800H");
   comp2.setMemoriaRam(32);
 
-
+  comp3.setSisOp("macOS - Big Sur");
+  comp3.setModelo("MacBook Air (Retina)");
+  comp3.setProcesador("i5, 4 nucleos");
+  comp3.setMemoriaRam(16);
 
   Laboratorio lab;
   lab.agregarFinal(comp1);
   lab.agregarFinal(comp2);
+  lab.agregarFinal(comp3);
 
   lab.mostrar();
   return 0;
